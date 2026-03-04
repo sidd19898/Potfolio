@@ -69,22 +69,18 @@ h1{
 .profilepic{
   height: 196px;
   width: 180px;
-  border-radius: 35px;
-  border-style: solid;
-  border-color: black;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  
 }
 
 .column{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: fit-content;
-  width: fit-content;
-  border-style: solid;
-  border-color: black;
-    border-radius: 35px;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+ 
+
+   
+ 
     padding: 15px;
     margin-right: 20px;
 }
@@ -156,9 +152,7 @@ a:hover{
 .Aboutme{
   width: 622px;
   height: fit-content;
-  border-style: solid;
-  border-color: black;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  
   margin-top: 15px;
   font-weight: 100;
   padding: 15px;
@@ -168,9 +162,7 @@ a:hover{
 .Projects{
    width: 622px;
   height: fit-content;
-  border-style: solid;
-  border-color: black;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  
   margin-top: 15px;
   font-weight: 100;
   padding: 15px;
@@ -180,9 +172,7 @@ a:hover{
 .skills{
   width: 622px;
   height: fit-content;
-  border-style: solid;
-  border-color: black;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  
   margin-top: 15px;
   font-weight: 100;
   padding: 15px;
@@ -194,9 +184,7 @@ a:hover{
 .Education{
   width: 622px;
   height: fit-content;
-  border-style: solid;
-  border-color: black;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  
   margin-top: 15px;
   font-weight: 100;
   padding: 15px;
@@ -207,9 +195,7 @@ a:hover{
   margin-top: 15px;
   width: 622px;
   height: fit-content;
-  border-style: solid;
-  border-color: black;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+ 
   font-weight: 100;
   padding: 15px;
   border-radius: 10px;
@@ -255,12 +241,12 @@ height: 1000px;
 
   .Aboutme{
     width: 300px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
   }
 
   .Projects{
     width: 300px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
   }
 
   .skills{
@@ -269,11 +255,11 @@ height: 1000px;
 
   .Education{
     width: 300px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
   }
   .Certificates{
     width: 300px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
   }
   .Links{
     width: 300px;
@@ -296,7 +282,7 @@ height: 1000px;
 }
 .column{
   padding: 15px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+ ;
 }
 .card{
   padding: 20px;
@@ -304,12 +290,13 @@ height: 1000px;
 
 .profilepic{
   margin-bottom: 20px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
 }
 
 .skills{
   flex-direction: column;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  
 }
 
 .git{
