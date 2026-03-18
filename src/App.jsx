@@ -246,15 +246,7 @@ function Certificates(){
   )
 }
 
- 
 
-function Cer(){
-  return(
-    <div className='potato'>
-      <iframe className="cohort" src={cohort}></iframe>
-    </div>
-  )
-}
 
 function Links(){
   return(
