@@ -237,14 +237,10 @@ function Education(){
 }
 
 function Certificates(){
-  const [isOpen, setisOpen] = useState(false)
   return(
     <div className='Certificates'>
       <div>Course : Full Stack Web Development</div>
-      <div><button><img className="cohort" src={cohort}></img></button>
-      <Modal open={isOpen} onClose={() =>setisOpen(false)}>
-        <iframe src={cohort}></iframe>
-      </Modal>
+      <div><img className="cohort" src={cohort}></img>
       </div>
     </div>
   )
