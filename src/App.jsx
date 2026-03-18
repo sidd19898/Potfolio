@@ -4,6 +4,7 @@ import giticon from './assets/github-sign.png'
 import cohort from './assets/certificate.png'
 import Modal from './Modal.jsx'
 import { useState } from 'react'
+import GitHubCalendar from 'react-github-calendar';
 
 function App() {
   return (
@@ -42,6 +43,30 @@ function Pd(){
         </div>
   )
 }
+
+
+
+
+
+
+function App() {
+  return (
+    <GitHubCalendar 
+      username="sidd19898"
+      colorScheme="dark"
+      blockSize={15}
+      blockMargin={5}
+      fontSize={16}
+    />
+  );
+}
+
+
+
+
+
+
+
 
 function Github(){
   return(
