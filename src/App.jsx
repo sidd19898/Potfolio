@@ -45,7 +45,63 @@ function Pd(){
 
 function Github(){
   return(
-    <div className='repos'>    
+    <div className='repos'>
+<div className='git'>
+
+<div className='parentgit'>
+
+    <div className='potora'>
+
+      <div>
+        <img className="giticon" src={giticon}></img>
+      </div>
+      
+      <div className='content'>
+        <div className='reponame'><a href='https://github.com/sidd19898/JSWM'>JSWM</a></div>
+      </div>
+
+    </div>   
+
+   <div className='repostack'>
+    <div className='space'>Frontend: React</div>
+      <div className='space'>Backend: Node.js, Express</div>
+      <div className='space'>Database: MongoDB</div>
+   </div>
+
+  </div>
+
+</div>
+
+
+
+<div className='git'>
+
+<div className='parentgit'>
+
+    <div className='potora'>
+
+      <div>
+        <img className="giticon" src={giticon}></img>
+      </div>
+      
+      <div className='content'>
+        <div className='reponame'><a href='https://github.com/sidd19898/paytm-mini-app'>Paytm-Mini-App</a></div>
+      </div>
+
+    </div>   
+
+   <div className='repostack'>
+    <div className='space'>Frontend: React</div>
+      <div className='space'>Backend: Node.js, Express</div>
+      <div className='space'>Database: MongoDB</div>
+   </div>
+
+  </div>
+
+</div>
+
+
+
 <div className='git'>
 
 <div className='parentgit'>
@@ -99,54 +155,6 @@ function Github(){
   </div>
 
 </div>
-
-
-
-<div className='git'>
-
-<div className='parentgit'>
-
-    <div className='potora'>
-
-      <div>
-        <img className="giticon" src={giticon}></img>
-      </div>
-      
-      <div className='content'>
-        <div className='reponame'><a href='https://github.com/sidd19898/async-playground-js'>Async-playground</a></div>
-      </div>
-
-    </div>   
-
-   <div className='repostack'><div className='space'>Frontend: HTML, CSS, JavaScript</div>
-   </div>
-
-  </div>
-
-</div>
-
-
-
-  <div className='git'>
-
-      <div className='parentgit'>
-
-       <div className='potora'>
-
-       <div>
-        <img className="giticon" src={giticon}></img>
-       </div>
-      
-       <div className='content'>
-        <div className='reponame'><a href='https://github.com/sidd19898/shoply'>Shoply</a></div>
-       </div>
-
-        </div>   
-
-       <div className='repostack'><div className='space'>Frontend: HTML, CSS, JavaScript</div>
-       </div>
-    </div>
-  </div>
 
 </div>
   )
