@@ -96,6 +96,7 @@ function Gitgraph() {
     <div className="gitgraph">
       <GitHubCalendar
         username="sidd19898"
+        colorScheme="light"
         transformData={selectLast8Months}
         blockSize={15}
         blockMargin={5}
