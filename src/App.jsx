@@ -2,9 +2,7 @@ import './App.css'
 import profilepic from './assets/IMG20251118201939.jpg'
 import giticon from './assets/github-sign.png'
 import cohort from './assets/certificate.png'
-import Modal from './Modal.jsx'
-import { useState } from 'react'
-import GitHubCalendar from 'react-github-calendar';
+import {GitHubCalendar} from 'react-github-calendar';
 
 function App() {
   return (
@@ -12,14 +10,51 @@ function App() {
       <div className='card'>
         <h1>My Portfolio</h1>
         
-        <div className='p1'><h3>Personal Details<Pd></Pd></h3></div>
-        <div className='p1'><h3>Github<Github></Github></h3></div>
-        <div className='p1'><h3>About Me<AboutMe></AboutMe></h3></div>
-        <div className='p1'><h3>Projects<Projects></Projects></h3></div>
-        <div className='p1'><h3>Skills<Skills></Skills></h3></div>
-        <div className='p1'><h3>Education<Education></Education></h3></div>
-        <div className='p1'><h3>Certificates<Certificates></Certificates></h3></div>
-        <div className='p1'><h3>Links<Links></Links></h3></div>
+        <div className='p1'>
+  <h3>Personal Details</h3>
+  <Pd />
+  
+</div>
+
+<div className='p1'>
+  <h3>Contribution activity</h3>
+  <Gitgraph />
+</div>
+
+<div className='p1'>
+  <h3>Github</h3>
+  <Github />
+</div>
+
+<div className='p1'>
+  <h3>About Me</h3>
+  <AboutMe />
+</div>
+
+<div className='p1'>
+  <h3>Projects</h3>
+  <Projects />
+</div>
+
+<div className='p1'>
+  <h3>Skills</h3>
+  <Skills />
+</div>
+
+<div className='p1'>
+  <h3>Education</h3>
+  <Education />
+</div>
+
+<div className='p1'>
+  <h3>Certificates</h3>
+  <Certificates />
+</div>
+
+<div className='p1'>
+  <h3>Links</h3>
+  <Links />
+</div>
       </div>
     </>
   )
@@ -44,23 +79,40 @@ function Pd(){
   )
 }
 
+function Gitgraph() {
+  const selectLast8Months = (contributions) => {
+    const now = new Date();
+    const past = new Date();
+    past.setMonth(now.getMonth() - 7);
+    past.setDate(past.getDate() - 20);
 
+    return contributions.filter(day => {
+      const date = new Date(day.date);
+      return date >= past;
+    });
+  };
 
-
-
-
-function App() {
   return (
-    <GitHubCalendar 
-      username="sidd19898"
-      colorScheme="dark"
-      blockSize={15}
-      blockMargin={5}
-      fontSize={16}
-    />
+    <div className="gitgraph">
+      <GitHubCalendar
+        username="sidd19898"
+        transformData={selectLast8Months}
+        blockSize={15}
+        blockMargin={5}
+        fontSize={16}
+        theme={{
+          light: [
+            "#ebedf0",
+            "#9be9a8",
+            "#40c463",
+            "#30a14e",
+            "#216e39"
+          ]
+        }}
+      />
+    </div>
   );
 }
-
 
 
 
