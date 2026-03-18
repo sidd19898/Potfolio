@@ -241,7 +241,7 @@ function Certificates(){
   return(
     <div className='Certificates'>
       <div>Course : Full Stack Web Development</div>
-      <div><button onClick={() => setisOpen(true)}><img className="cohort" src={cohort}></img></button>
+      <div><button><img className="cohort" src={cohort}></img></button>
       <Modal open={isOpen} onClose={() =>setisOpen(false)}>
         <iframe src={cohort}></iframe>
       </Modal>
