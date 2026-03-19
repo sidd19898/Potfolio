@@ -79,6 +79,8 @@ function Pd(){
   )
 }
 
+
+
 function Gitgraph() {
   const selectLast8Months = (contributions) => {
     const now = new Date();
@@ -86,9 +88,17 @@ function Gitgraph() {
     past.setMonth(now.getMonth() - 7);
     past.setDate(past.getDate() - 20);
 
-    return contributions.filter(day => {
+    return contributions.map(day => {
       const date = new Date(day.date);
-      return date >= past;
+
+      if (date < past) {
+        return {
+          ...day,
+          count: 0, // 👈 keep box but empty it
+        };
+      }
+
+      return day;
     });
   };
 
@@ -114,7 +124,6 @@ function Gitgraph() {
     </div>
   );
 }
-
 
 
 
