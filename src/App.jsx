@@ -85,7 +85,7 @@ function Gitgraph() {
   const selectLast8Months = (contributions) => {
     const now = new Date();
     const past = new Date();
-    past.setMonth(now.getMonth() - 7);
+    past.setMonth(now.getMonth() - 5);
     past.setDate(past.getDate() - 20);
 
     return contributions.map(day => {
