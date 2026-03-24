@@ -82,32 +82,11 @@ function Pd(){
 
 
 function Gitgraph() {
-  const selectLast8Months = (contributions) => {
-    const now = new Date();
-    const past = new Date();
-    past.setMonth(now.getMonth() - 3);
-    past.setDate(past.getDate() - 20);
-
-    return contributions.map(day => {
-      const date = new Date(day.date);
-
-      if (date < past) {
-        return {
-          ...day,
-          count: 0, // 👈 keep box but empty it
-        };
-      }
-
-      return day;
-    });
-  };
-
   return (
     <div className="gitgraph">
       <GitHubCalendar
         username="sidd19898"
         colorScheme="light"
-        transformData={selectLast8Months}
         blockSize={15}
         blockMargin={5}
         fontSize={16}
